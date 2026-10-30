@@ -174,3 +174,437 @@ textarea.form-control {
 .footer-content p {
     margin: 5px 0;
 }
+
+/* =========================
+   HOMEPAGE HERO SECTION
+========================= */
+
+.hero {
+    background:
+        linear-gradient(
+            90deg,
+            rgba(18, 18, 18, 0.98),
+            rgba(18, 18, 18, 0.65)
+        ),
+        linear-gradient(135deg, #54151a, #171717);
+
+    padding: 100px 0;
+    min-height: 380px;
+
+    display: flex;
+    align-items: center;
+}
+
+.hero-content {
+    text-align: left;
+}
+
+.hero-subtitle {
+    color: var(--color-primary);
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.hero-description {
+    color: var(--color-text-secondary);
+    font-size: 17px;
+    max-width: 600px;
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   SECTION HEADING
+========================= */
+
+.section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.section-heading .section-title {
+    margin-bottom: 0;
+}
+
+.view-all {
+    color: var(--color-primary);
+    font-weight: bold;
+}
+
+
+/* =========================
+   MOVIE GRID AND CARDS
+========================= */
+
+.movie-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.movie-card {
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-medium);
+    overflow: hidden;
+    transition: transform 0.2s ease;
+}
+
+.movie-card:hover {
+    transform: translateY(-5px);
+}
+
+.movie-poster {
+    height: 280px;
+    display: flex;
+    align-items: end;
+    padding: 20px;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.poster-one {
+    background: linear-gradient(135deg, #31465b, #111827);
+}
+
+.poster-two {
+    background: linear-gradient(135deg, #68482c, #171717);
+}
+
+.poster-three {
+    background: linear-gradient(135deg, #453348, #151515);
+}
+
+.movie-info {
+    padding: 20px;
+}
+
+.movie-info h3 {
+    font-size: 21px;
+    margin-bottom: 5px;
+}
+
+.movie-meta {
+    color: var(--color-text-secondary);
+    margin-bottom: 10px;
+}
+
+.movie-rating {
+    color: #f5c518;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.movie-info .btn {
+    width: 100%;
+}
+
+
+/* =========================
+   CALL TO ACTION
+========================= */
+
+.cta-section {
+    background-color: var(--color-surface);
+    border-top: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
+    text-align: center;
+    padding: 55px 20px;
+}
+
+.cta-section h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.cta-section p {
+    color: var(--color-text-secondary);
+    margin-bottom: 22px;
+}
+
+
+
+/* =========================
+   MOVIES SEARCH SECTION
+========================= */
+
+.search-section {
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-medium);
+    padding: 25px;
+    margin-bottom: 20px;
+}
+
+.search-title {
+    font-size: 23px;
+    margin-bottom: 20px;
+}
+
+.movie-search-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px 22px;
+}
+
+.movie-search-form .form-group {
+    margin-bottom: 0;
+}
+
+.search-actions {
+    grid-column: 1 / -1;
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 5px;
+}
+
+.poster-four {
+    background: linear-gradient(135deg, #254b40, #111827);
+}
+
+.poster-five {
+    background: linear-gradient(135deg, #77502b, #171717);
+}
+
+.poster-six {
+    background: linear-gradient(135deg, #48535b, #151515);
+}
+
+
+/* =========================
+   MOVIE DETAILS PAGE
+========================= */
+
+.breadcrumb {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 25px;
+    color: var(--color-text-secondary);
+    font-size: 14px;
+}
+
+.breadcrumb a:hover {
+    color: var(--color-primary);
+}
+
+
+/* Movie information layout */
+
+.movie-details {
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    gap: 40px;
+    margin-top: 35px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.details-poster {
+    min-height: 430px;
+    border-radius: var(--radius-medium);
+    display: flex;
+    align-items: end;
+    padding: 25px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.details-content h1 {
+    font-size: 38px;
+    margin: 10px 0;
+}
+
+.details-rating {
+    color: #f5c518;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.details-rating span {
+    color: var(--color-text-secondary);
+    font-size: 13px;
+    font-weight: normal;
+}
+
+.details-meta {
+    margin-bottom: 25px;
+}
+
+.details-meta p {
+    margin-bottom: 10px;
+    color: var(--color-text-secondary);
+}
+
+.details-meta strong {
+    color: var(--color-text);
+}
+
+.movie-description h2 {
+    font-size: 21px;
+    margin-bottom: 10px;
+}
+
+.movie-description p {
+    color: var(--color-text-secondary);
+    margin-bottom: 25px;
+    line-height: 1.8;
+}
+
+
+/* Reviews */
+
+.reviews-section {
+    padding-top: 35px;
+}
+
+.review-intro {
+    margin-top: -10px;
+    margin-bottom: 25px;
+}
+
+.review-card {
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-medium);
+    padding: 22px;
+    margin-bottom: 18px;
+}
+
+.review-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.review-header h3 {
+    font-size: 18px;
+}
+
+.review-rating {
+    color: #f5c518;
+    font-weight: bold;
+}
+
+.review-date {
+    font-size: 13px;
+    margin: 5px 0 12px;
+}
+
+.review-card > p:last-child {
+    line-height: 1.7;
+}
+
+
+/* Back button */
+
+.back-to-movies {
+    margin: 10px 0 40px;
+}
+
+
+/* =========================
+   AUTHENTICATION PAGES
+========================= */
+
+.auth-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 65px 15px;
+    min-height: 600px;
+}
+
+.auth-card {
+    width: 100%;
+    max-width: 480px;
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-medium);
+    padding: 35px;
+}
+
+.auth-heading {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.auth-heading h1 {
+    font-size: 29px;
+    margin: 10px 0;
+}
+
+.auth-heading .muted-text {
+    line-height: 1.6;
+}
+
+.auth-form .form-group {
+    margin-bottom: 22px;
+}
+
+.remember-row {
+    margin-bottom: 22px;
+}
+
+.remember-label {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    cursor: pointer;
+}
+
+.remember-label input {
+    accent-color: var(--color-primary);
+    width: 16px;
+    height: 16px;
+}
+
+.auth-button {
+    width: 100%;
+}
+
+.auth-footer {
+    text-align: center;
+    margin-top: 25px;
+    color: var(--color-text-secondary);
+}
+
+.auth-footer a {
+    color: var(--color-primary);
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.auth-footer a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* =========================
+   SIGNUP PAGE
+========================= */
+
+.form-hint {
+    display: block;
+    color: var(--color-text-secondary);
+    font-size: 12px;
+    margin-top: 7px;
+}
+
+.auth-form select {
+    width: 100%;
+}

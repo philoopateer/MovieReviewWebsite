@@ -5,21 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>CineRate | Components Preview</title>
+    <title>CineRate | Home</title>
 
-    <!-- Main CSS -->
+    <!-- Shared CSS files -->
     <link rel="stylesheet" href="css/style.css">
-
-    <!-- Components CSS -->
     <link rel="stylesheet" href="css/components.css">
-
-    <!-- Responsive CSS -->
     <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
 
-    <!-- Website Header -->
+    <!-- HEADER -->
     <header class="site-header">
         <div class="container header-content">
 
@@ -35,121 +31,177 @@
     </header>
 
 
-    <main class="container">
+    <!-- GUEST NAVIGATION -->
+    <nav class="navbar navbar--guest">
+        <div class="container">
 
-        <!-- Guest Navigation Preview -->
-        <section class="section">
-            <h2 class="section-title">Guest Navigation</h2>
+            <ul class="nav-list">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="pages/movies.html">Movies</a></li>
+                <li><a href="pages/login.html">Login</a></li>
+                <li><a href="pages/signup.html">Sign Up</a></li>
+            </ul>
 
-            <nav class="navbar navbar--guest">
-                <ul class="nav-list">
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="pages/movies.html">Movies</a></li>
-                    <li><a href="pages/login.html">Login</a></li>
-                    <li><a href="pages/signup.html">Sign Up</a></li>
-                </ul>
-            </nav>
+        </div>
+    </nav>
+
+
+    <main>
+
+        <!-- HERO SECTION -->
+        <section class="hero">
+            <div class="container hero-content">
+
+                <p class="hero-subtitle">
+                    WELCOME TO CINERATE
+                </p>
+
+                <h1>
+                    Discover. Review. Rate.
+                </h1>
+
+                <p class="hero-description">
+                    Explore your favorite movies, discover new stories,
+                    and share your opinions with other movie lovers.
+                </p>
+
+                <a href="pages/movies.html" class="btn btn-primary">
+                    Browse Movies
+                </a>
+
+            </div>
         </section>
 
 
-        <!-- User Navigation Preview -->
+        <!-- FEATURED MOVIES -->
         <section class="section">
-            <h2 class="section-title">User Navigation</h2>
+            <div class="container">
 
-            <nav class="navbar navbar--user">
-                <ul class="nav-list">
-                    <li><a href="pages/user-dashboard.html">Dashboard</a></li>
-                    <li><a href="pages/movies.html">Movies</a></li>
-                    <li><a href="pages/my-reviews.html">My Reviews</a></li>
-                    <li><a href="pages/submit-review.html">Submit Review</a></li>
-                    <li><a href="pages/login.html">Logout</a></li>
-                </ul>
-            </nav>
-        </section>
+                <div class="section-heading">
+                    <div>
+                        <p class="muted-text">EXPLORE OUR COLLECTION</p>
+                        <h2 class="section-title">Featured Movies</h2>
+                    </div>
 
-
-        <!-- Admin Navigation Preview -->
-        <section class="section">
-            <h2 class="section-title">Admin Navigation</h2>
-
-            <nav class="navbar navbar--admin">
-                <ul class="nav-list">
-                    <li><a href="pages/admin-dashboard.html">Dashboard</a></li>
-                    <li><a href="pages/manage-movies.html">Manage Movies</a></li>
-                    <li><a href="pages/add-movie.html">Add Movie</a></li>
-                    <li><a href="pages/manage-reviews.html">Manage Reviews</a></li>
-                    <li><a href="pages/login.html">Logout</a></li>
-                </ul>
-            </nav>
-        </section>
-
-
-        <!-- Buttons Preview -->
-        <section class="section">
-            <h2 class="section-title">Buttons</h2>
-
-            <button class="btn btn-primary" type="button">
-                Primary Button
-            </button>
-
-            <button class="btn btn-secondary" type="button">
-                Secondary Button
-            </button>
-
-            <button class="btn btn-danger" type="button">
-                Delete
-            </button>
-        </section>
-
-
-        <!-- Form Preview -->
-        <section class="section">
-            <h2 class="section-title">Form Design</h2>
-
-            <form class="form-container">
-
-                <h3 class="form-title">Sample Form</h3>
-
-                <div class="form-group">
-                    <label for="sample-email">Email Address</label>
-
-                    <input
-                        type="email"
-                        id="sample-email"
-                        class="form-control"
-                        placeholder="Enter your email"
-                        required
-                    >
+                    <a href="pages/movies.html" class="view-all">
+                        View All Movies →
+                    </a>
                 </div>
 
-                <div class="form-group">
-                    <label for="sample-message">Message</label>
 
-                    <textarea
-                        id="sample-message"
-                        class="form-control"
-                        placeholder="Write your message"
-                        required
-                    ></textarea>
+                <div class="movie-grid">
+
+                    <!-- MOVIE 1 -->
+                    <article class="movie-card">
+
+                        <div class="movie-poster poster-one">
+                            <span>INCEPTION</span>
+                        </div>
+
+                        <div class="movie-info">
+
+                            <h3>Inception</h3>
+
+                            <p class="movie-meta">
+                                2010 | Sci-Fi
+                            </p>
+
+                            <p class="movie-rating">
+                                ★ 8.8 / 10
+                            </p>
+
+                            <a href="pages/movie-details.html"
+                               class="btn btn-secondary">
+                                View Details
+                            </a>
+
+                        </div>
+                    </article>
+
+
+                    <!-- MOVIE 2 -->
+                    <article class="movie-card">
+
+                        <div class="movie-poster poster-two">
+                            <span>INTERSTELLAR</span>
+                        </div>
+
+                        <div class="movie-info">
+
+                            <h3>Interstellar</h3>
+
+                            <p class="movie-meta">
+                                2014 | Sci-Fi
+                            </p>
+
+                            <p class="movie-rating">
+                                ★ 8.7 / 10
+                            </p>
+
+                            <a href="pages/movie-details.html"
+                               class="btn btn-secondary">
+                                View Details
+                            </a>
+
+                        </div>
+                    </article>
+
+
+                    <!-- MOVIE 3 -->
+                    <article class="movie-card">
+
+                        <div class="movie-poster poster-three">
+                            <span>THE DARK KNIGHT</span>
+                        </div>
+
+                        <div class="movie-info">
+
+                            <h3>The Dark Knight</h3>
+
+                            <p class="movie-meta">
+                                2008 | Action
+                            </p>
+
+                            <p class="movie-rating">
+                                ★ 9.0 / 10
+                            </p>
+
+                            <a href="pages/movie-details.html"
+                               class="btn btn-secondary">
+                                View Details
+                            </a>
+
+                        </div>
+                    </article>
+
                 </div>
 
-                <div class="form-actions">
-                    <button class="btn btn-primary" type="submit">
-                        Submit
-                    </button>
+            </div>
+        </section>
 
-                    <button class="btn btn-secondary" type="reset">
-                        Reset
-                    </button>
-                </div>
 
-            </form>
+        <!-- CALL TO ACTION -->
+        <section class="cta-section">
+            <div class="container">
+
+                <h2>Share Your Movie Experience</h2>
+
+                <p>
+                    Join CineRate and share your reviews
+                    and ratings with other movie fans.
+                </p>
+
+                <a href="pages/signup.html" class="btn btn-primary">
+                    Create Your Account
+                </a>
+
+            </div>
         </section>
 
     </main>
 
 
-    <!-- Website Footer -->
+    <!-- FOOTER -->
     <footer class="site-footer">
         <div class="container footer-content">
 

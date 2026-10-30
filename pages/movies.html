@@ -1,0 +1,394 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CineRate | Movies</title>
+
+    <!-- CSS files: use ../ because this page is inside pages/ -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="site-header">
+        <div class="container header-content">
+
+            <a href="../index.html" class="logo">
+                Cine<span>Rate</span>
+            </a>
+
+            <p class="muted-text">
+                Your destination for movie reviews
+            </p>
+
+        </div>
+    </header>
+
+
+    <!-- GUEST NAVIGATION -->
+    <nav class="navbar navbar--guest">
+        <div class="container">
+
+            <ul class="nav-list">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="movies.html" class="active">Movies</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+            </ul>
+
+        </div>
+    </nav>
+
+
+    <main class="container">
+
+        <!-- PAGE INTRODUCTION -->
+        <section class="section">
+            <p class="muted-text">EXPLORE OUR COLLECTION</p>
+
+            <h1 class="section-title">
+                Discover Movies
+            </h1>
+
+            <p class="muted-text">
+                Search for your favorite movies and discover
+                new stories worth watching.
+            </p>
+        </section>
+
+
+        <!-- SEARCH FORM -->
+        <section class="search-section">
+
+            <h2 class="search-title">Find Your Movie</h2>
+
+            <form action="#" method="get" class="movie-search-form">
+
+                <div class="form-group">
+                    <label for="movie-id">Movie ID</label>
+
+                    <input
+                        type="number"
+                        id="movie-id"
+                        name="id"
+                        class="form-control"
+                        placeholder="Enter movie ID"
+                        min="1"
+                    >
+                </div>
+
+
+                <div class="form-group">
+                    <label for="movie-title">Movie Title</label>
+
+                    <input
+                        type="text"
+                        id="movie-title"
+                        name="title"
+                        class="form-control"
+                        placeholder="Enter movie title"
+                    >
+                </div>
+
+
+                <div class="form-group">
+                    <label for="movie-genre">Genre</label>
+
+                    <select
+                        id="movie-genre"
+                        name="genre"
+                        class="form-control"
+                    >
+                        <option value="">All Genres</option>
+                        <option value="action">Action</option>
+                        <option value="adventure">Adventure</option>
+                        <option value="comedy">Comedy</option>
+                        <option value="drama">Drama</option>
+                        <option value="sci-fi">Sci-Fi</option>
+                        <option value="thriller">Thriller</option>
+                    </select>
+                </div>
+
+
+                <div class="form-group">
+                    <label for="release-year">Release Year</label>
+
+                    <input
+                        type="number"
+                        id="release-year"
+                        name="year"
+                        class="form-control"
+                        placeholder="e.g. 2010"
+                        min="1888"
+                        max="2026"
+                    >
+                </div>
+
+
+                <div class="form-group">
+                    <label for="movie-director">Director</label>
+
+                    <input
+                        type="text"
+                        id="movie-director"
+                        name="director"
+                        class="form-control"
+                        placeholder="Enter director name"
+                    >
+                </div>
+
+
+                <div class="search-actions">
+
+                    <button type="submit" class="btn btn-primary">
+                        Search Movies
+                    </button>
+
+                    <button type="reset" class="btn btn-secondary">
+                        Clear Filters
+                    </button>
+
+                </div>
+
+            </form>
+
+        </section>
+
+
+        <!-- MOVIES LIST -->
+        <section class="section">
+
+            <div class="section-heading">
+                <div>
+                    <p class="muted-text">BROWSE OUR COLLECTION</p>
+                    <h2 class="section-title">All Movies</h2>
+                </div>
+
+                <p class="muted-text">Showing sample movies</p>
+            </div>
+
+
+            <div class="movie-grid">
+
+                <!-- MOVIE 1 -->
+                <article class="movie-card">
+
+                    <div class="movie-poster poster-one">
+                        <span>INCEPTION</span>
+                    </div>
+
+                    <div class="movie-info">
+
+                        <h3>Inception</h3>
+
+                        <p class="movie-meta">
+                            ID: 101 | 2010 | Sci-Fi
+                        </p>
+
+                        <p class="movie-meta">
+                            Director: Christopher Nolan
+                        </p>
+
+                        <p class="movie-rating">
+                            ★ 8.8 / 10
+                        </p>
+
+                        <a href="movie-details.html"
+                           class="btn btn-secondary">
+                            View Details
+                        </a>
+
+                    </div>
+                </article>
+
+
+                <!-- MOVIE 2 -->
+                <article class="movie-card">
+
+                    <div class="movie-poster poster-two">
+                        <span>INTERSTELLAR</span>
+                    </div>
+
+                    <div class="movie-info">
+
+                        <h3>Interstellar</h3>
+
+                        <p class="movie-meta">
+                            ID: 102 | 2014 | Sci-Fi
+                        </p>
+
+                        <p class="movie-meta">
+                            Director: Christopher Nolan
+                        </p>
+
+                        <p class="movie-rating">
+                            ★ 8.7 / 10
+                        </p>
+
+                        <a href="movie-details.html"
+                           class="btn btn-secondary">
+                            View Details
+                        </a>
+
+                    </div>
+                </article>
+
+
+                <!-- MOVIE 3 -->
+                <article class="movie-card">
+
+                    <div class="movie-poster poster-three">
+                        <span>THE DARK KNIGHT</span>
+                    </div>
+
+                    <div class="movie-info">
+
+                        <h3>The Dark Knight</h3>
+
+                        <p class="movie-meta">
+                            ID: 103 | 2008 | Action
+                        </p>
+
+                        <p class="movie-meta">
+                            Director: Christopher Nolan
+                        </p>
+
+                        <p class="movie-rating">
+                            ★ 9.0 / 10
+                        </p>
+
+                        <a href="movie-details.html"
+                           class="btn btn-secondary">
+                            View Details
+                        </a>
+
+                    </div>
+                </article>
+
+
+                <!-- MOVIE 4 -->
+                <article class="movie-card">
+
+                    <div class="movie-poster poster-four">
+                        <span>THE MATRIX</span>
+                    </div>
+
+                    <div class="movie-info">
+
+                        <h3>The Matrix</h3>
+
+                        <p class="movie-meta">
+                            ID: 104 | 1999 | Sci-Fi
+                        </p>
+
+                        <p class="movie-meta">
+                            Director: Lana and Lilly Wachowski
+                        </p>
+
+                        <p class="movie-rating">
+                            ★ 8.7 / 10
+                        </p>
+
+                        <a href="movie-details.html"
+                           class="btn btn-secondary">
+                            View Details
+                        </a>
+
+                    </div>
+                </article>
+
+
+                <!-- MOVIE 5 -->
+                <article class="movie-card">
+
+                    <div class="movie-poster poster-five">
+                        <span>GLADIATOR</span>
+                    </div>
+
+                    <div class="movie-info">
+
+                        <h3>Gladiator</h3>
+
+                        <p class="movie-meta">
+                            ID: 105 | 2000 | Action
+                        </p>
+
+                        <p class="movie-meta">
+                            Director: Ridley Scott
+                        </p>
+
+                        <p class="movie-rating">
+                            ★ 8.5 / 10
+                        </p>
+
+                        <a href="movie-details.html"
+                           class="btn btn-secondary">
+                            View Details
+                        </a>
+
+                    </div>
+                </article>
+
+
+                <!-- MOVIE 6 -->
+                <article class="movie-card">
+
+                    <div class="movie-poster poster-six">
+                        <span>THE SHAWSHANK REDEMPTION</span>
+                    </div>
+
+                    <div class="movie-info">
+
+                        <h3>The Shawshank Redemption</h3>
+
+                        <p class="movie-meta">
+                            ID: 106 | 1994 | Drama
+                        </p>
+
+                        <p class="movie-meta">
+                            Director: Frank Darabont
+                        </p>
+
+                        <p class="movie-rating">
+                            ★ 9.3 / 10
+                        </p>
+
+                        <a href="movie-details.html"
+                           class="btn btn-secondary">
+                            View Details
+                        </a>
+
+                    </div>
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container footer-content">
+
+            <p>
+                &copy; 2026 CineRate. All rights reserved.
+            </p>
+
+            <p>
+                Discover movies. Share your opinions.
+            </p>
+
+        </div>
+    </footer>
+
+</body>
+</html>
