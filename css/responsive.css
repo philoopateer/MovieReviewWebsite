@@ -1,0 +1,54 @@
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 768px) {
+
+    .header-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-list {
+        gap: 12px;
+    }
+
+    .nav-list a {
+        font-size: 14px;
+    }
+
+    .section-title {
+        font-size: 23px;
+    }
+
+    .form-container {
+        padding: 18px;
+    }
+
+    .btn {
+        padding: 9px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .container {
+        width: 94%;
+    }
+
+    .logo {
+        font-size: 23px;
+    }
+
+    .nav-list {
+        gap: 10px;
+    }
+
+    .form-actions {
+        flex-direction: column;
+    }
+
+    .form-actions .btn {
+        width: 100%;
+    }
+}
