@@ -197,3 +197,26 @@
         font-size: 25px;
     }
 }
+
+
+
+/* =========================
+   MOVIE MANAGEMENT RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+    .management-toolbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .management-toolbar .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .table-section {
+        padding: 10px;
+    }
+}
